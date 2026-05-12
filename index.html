@@ -12,7 +12,7 @@
 <body>
     <header class="header glassmorphism">
         <a href="#home" class="logo anti-gravity-slow">Manu.dev</a>
-
+        <i class='bx bx-menu' id="menu-icon"></i>
         <nav class="navbar">
             <a href="#home" style="--i:1" class="active">Home</a>
             <a href="#about" style="--i:2">About</a>
@@ -442,6 +442,25 @@
                 }
             });
         });
+        // 5. MOBILE HAMBURGER MENU
+        const menuIcon = document.querySelector('#menu-icon');
+        const navbar = document.querySelector('.navbar');
+
+        if (menuIcon && navbar) {
+            menuIcon.onclick = () => {
+                menuIcon.classList.toggle('bx-x'); // Turns the 3 lines into an 'X'
+                navbar.classList.toggle('active'); // Drops the menu down
+            };
+
+            // Close the menu when a link is clicked
+            const navLinksMobile = document.querySelectorAll('.navbar a');
+            navLinksMobile.forEach(link => {
+                link.addEventListener('click', () => {
+                    menuIcon.classList.remove('bx-x');
+                    navbar.classList.remove('active');
+                });
+            });
+        }
     </script>
 </body>
 </html>
