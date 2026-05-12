@@ -872,3 +872,10 @@ body {
         justify-content: center; 
     }
 }
+/* 10. FIX ZOOMED PICTURES HIDING BEHIND GALLERY */
+    .image-modal {
+        z-index: 99999999 !important; /* 8 nines to beat the gallery's 6 nines! */
+    }
+    .close-modal {
+        z-index: 999999999 !important; /* 9 nines so the X button is always on top */
+    }
