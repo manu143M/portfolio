@@ -773,12 +773,39 @@ body {
         font-size: 1.2rem;
     }
 
-    /* 4. THE PICTURE FIX (Perfect Circle) */
+    /* 4. PERFECT MOBILE HOME LAYOUT */
     .home {
         flex-direction: column-reverse;
         padding-top: 120px; 
         gap: 20px;
+    }
+    .home-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Forces all text and buttons to the dead center */
         text-align: center;
+        width: 100%;
+    }
+    .home-content h1.palette-text {
+        font-size: 32px; /* Shrinks your name slightly so it doesn't get cut off */
+        line-height: 1.2;
+        margin: 10px 0;
+    }
+    .home-content h3 {
+        font-size: 20px;
+    }
+    .home-content p {
+        margin-top: 15px;
+        padding: 0 15px; /* Gives the text room to breathe on the edges */
+    }
+    .home-sci {
+        margin: 25px 0;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    .home-sci a {
+        margin: 0; /* Removes weird desktop spacing pushing them left */
     }
     .profile-container {
         display: flex;
@@ -788,13 +815,12 @@ body {
     }
     .floating-avatar {
         width: 250px;
-        height: 250px; /* Locks the height */
-        object-fit: cover; /* Stops it from stretching! */
-        border-radius: 50%; /* Makes it a circle */
-        border: 4px solid white; /* Adds a nice clean border */
+        height: 250px; 
+        object-fit: cover; 
+        border-radius: 50%; 
+        border: 4px solid white; 
         box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     }
-
     /* 5. Stack other sections neatly */
     section { padding: 100px 5% 50px; }
     .about-grid, .skills-container, .contact-container, .input-row {
