@@ -803,3 +803,26 @@ body {
     }
     .side-gallery { width: 100%; }
 }
+/* 9. PERFECTLY CENTER GALLERY IMAGES & TEXT */
+    .side-gallery-content {
+        padding: 60px 15px 30px 15px; /* Evens out the left and right spacing */
+        text-align: center; /* Centers the titles and descriptions */
+    }
+    
+    .gallery-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Forces all images to the dead center */
+        width: 100%;
+    }
+
+    .gallery-grid img, .gallery-video {
+        width: 100%; /* Makes sure it fills the space evenly */
+        max-width: 100%; 
+        margin: 0 auto 15px auto; /* Locks the image in the center */
+    }
+    
+    .anti-gravity {
+        display: flex;
+        justify-content: center; /* Centers the video container */
+    }
