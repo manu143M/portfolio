@@ -879,3 +879,9 @@ body {
     .close-modal {
         z-index: 999999999 !important; /* 9 nines so the X button is always on top */
     }
+    /* 11. FIX LEGAL TEXT COLUMNS BUG */
+    .legal-text {
+        display: block !important; /* Forces the text to stack vertically instead of side-by-side */
+        text-align: left !important;
+        padding: 0 15px; /* Adds a little breathing room on the sides */
+    }
