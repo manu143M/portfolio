@@ -116,6 +116,7 @@ body {
     font-size: 17px;
     line-height: 1.7;
     margin-top: 20px;
+    margin-bottom: 40px;
     color: var(--text-muted);
     font-weight: 500;
 }
