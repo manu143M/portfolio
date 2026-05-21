@@ -88,16 +88,36 @@ body {
     gap: 50px; 
 }
 
-/* 1. Add the missing space above the button */
-.home-content p {
-    margin-bottom: 30px; /* Replaces the space the social icons used to take */
+.home-content {
+    max-width: 600px;
+    flex: 1;
 }
 
-/* 2. Force the image to stay a perfect circle forever */
-.floating-avatar {
-    aspect-ratio: 1 / 1; /* Locks the width and height to always be equal */
-    object-fit: cover; /* Stops the image inside from distorting */
-    height: auto; /* Prevents flexbox from stretching it vertically */
+.home-content h3 {
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--text-muted);
+}
+
+.home-content h1.palette-text {
+    font-size: 54px;
+    font-weight: 900;
+    margin: 5px 0;
+    color: var(--color-dark);
+    letter-spacing: -1.5px;
+}
+
+.home-content h3 span {
+    color: var(--color-dark);
+    font-weight: 700;
+}
+
+.home-content p {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-top: 20px;
+    color: var(--text-muted);
+    font-weight: 500;
 }
 
 .home-sci { margin: 35px 0; }
